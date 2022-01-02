@@ -1,15 +1,15 @@
-package keyconceptsandvariables;
+package variables;
 
 import java.util.Scanner;
 
-public class Main {
+public class NoteAverage {
 
     public static void main(String[] args) {
 
         System.out.println("------Not Ortalaması Programı-------");
         Scanner scan = new Scanner(System.in);
 
-        double average = 0.0;
+        double average;
         String result;
 
         System.out.println("Matematik Notunuzu Giriniz");
@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Muzik Notunuzu Giriniz");
         int musicNote = scan.nextInt();
 
-        average = (mathNote + chemNote + turkNote + historyNote + musicNote) / 5;
+        average = (mathNote + chemNote + turkNote + historyNote + musicNote) / 5.0;
         result = average > 60 ? "Gectiniz" : "Kaldınız";
 
         System.out.println(average + " " + result);
