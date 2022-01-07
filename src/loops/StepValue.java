@@ -7,7 +7,6 @@ public class StepValue {
         System.out.println("Basamak degerlerinin toplamını istediğiniz sayıyı giriniz:");
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
-        int temp;
         int total = 0;
 
         while (number != 0){
